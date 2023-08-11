@@ -1,0 +1,14 @@
+<div class="data-form">
+    <label for="dateInput">Task start Date:</label>
+    <input type="date" id="dateInput" [(ngModel)]="selectedDate" name="selectedDate">
+    
+    <br>
+    
+    <label for="textInput">Number of working days:</label>
+    <input type="number" id="textInput" [(ngModel)]="inputText" name="inputText">
+    
+    <button (click)="submitData()">Submit</button>
+
+    <p *ngIf="endDate">Task end date : {{endDate}}</p>
+</div>
+  
